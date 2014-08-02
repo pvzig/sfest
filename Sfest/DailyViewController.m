@@ -157,10 +157,9 @@
                      completion:^(BOOL finished){
                          [animateview removeFromSuperview];
                          [background removeFromSuperview];
-                         UIStoryboard *main = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-                         StageCollectionViewController *scvc = [main instantiateViewControllerWithIdentifier:@"scvc"];
+                         StageCollectionViewController *scvc = [self.navigationController.viewControllers objectAtIndex:0];
                          scvc.savedScrollPosition = self.savedScrollPosition;
-                         [self.navigationController pushViewController:scvc animated:NO];
+                         [self.navigationController popToRootViewControllerAnimated:NO];
                      }];
 }
 
