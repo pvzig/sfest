@@ -12,8 +12,8 @@
 
 @interface MapView : MKMapView <CLLocationManagerDelegate>
 
-@property NSString *stageName;
-@property CLLocationManager *locationManager;
+@property (nonatomic, strong) NSString *stageName;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 -(instancetype)initWithFrame:(CGRect)frame stage:(NSString*)stage;
 

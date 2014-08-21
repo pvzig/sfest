@@ -10,8 +10,8 @@
 
 @interface MapPoint : NSObject <MKAnnotation>
 
-@property (nonatomic,readonly) CLLocationCoordinate2D coordinate;
-@property (nonatomic,copy) NSString *title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
 
 -(id)initWithCoordinate:(CLLocationCoordinate2D)locationCoordinate title:(NSString *)titleString;
 -(MKMapItem*)mapItem;

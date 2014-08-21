@@ -10,8 +10,8 @@
 
 @interface DailyTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, DateChangedDelegate>
 
-@property NSArray *data;
-@property BandsDatabase *db;
+@property (nonatomic, strong) NSArray *data;
+@property (nonatomic, strong) BandsDatabase *db;
 
 -(id)initWithStyle:(UITableViewStyle)style atStage:(NSString*)stage onDate:(NSString*)date withColor:(UIColor*)complimentaryColor;
 

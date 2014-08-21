@@ -16,22 +16,22 @@
 
 @interface DailyViewController : UIViewController <UIGestureRecognizerDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *stageView;
-@property (strong, nonatomic) IBOutlet UIView *dateView;
-@property (strong, nonatomic) IBOutlet UILabel *stageNameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *dayOfTheWeekLabel;
-@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
-@property (strong, nonatomic) IBOutlet UIButton *closeButton;
+@property (nonatomic, strong) IBOutlet UIView *stageView;
+@property (nonatomic, strong) IBOutlet UIView *dateView;
+@property (nonatomic, strong) IBOutlet UILabel *stageNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel *dayOfTheWeekLabel;
+@property (nonatomic, strong) IBOutlet UILabel *dateLabel;
+@property (nonatomic, strong) IBOutlet UIButton *closeButton;
 
-@property MapView *mapView;
-@property NSDate *globalDate;
-@property NSString *stageName;
-@property UIColor *stageColor;
-@property UIColor *complimentaryColor;
-@property UIImage *backgroundImage;
-@property NSIndexPath *selectedIndex;
-@property CGPoint savedScrollPosition;
-@property CGRect returnRectangle;
+@property (nonatomic, strong) MapView *mapView;
+@property (nonatomic, strong) NSDate *globalDate;
+@property (nonatomic, strong) NSString *stageName;
+@property (nonatomic, strong) UIColor *stageColor;
+@property (nonatomic, strong) UIColor *complimentaryColor;
+@property (nonatomic, strong) UIImage *backgroundImage;
+@property (nonatomic, strong) NSIndexPath *selectedIndex;
+@property (nonatomic) CGPoint savedScrollPosition;
+@property (nonatomic) CGRect returnRectangle;
 
 @property id <DateChangedDelegate> delegate;
 
